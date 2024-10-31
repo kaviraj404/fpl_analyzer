@@ -3,161 +3,321 @@ document.addEventListener('DOMContentLoaded', function() {
     const results = document.getElementById('results');
     const loading = document.getElementById('loading');
     const errorMessage = document.getElementById('error-message');
+    const teamIdInput = document.getElementById('team-id');
+    const analyzeButton = document.getElementById('analyze-button');
 
-    form.addEventListener('submit', async function(e) {
+    // Initialize modals
+    const modal = document.getElementById('playerModal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePlayerModal();
+            }
+        });
+    }
+
+    if (form) {
+        form.addEventListener('submit', handleFormSubmit);
+    }
+
+    async function handleFormSubmit(e) {
         e.preventDefault();
         
-        // Reset UI
+        analyzeButton.disabled = true;
+        analyzeButton.innerHTML = 'Analyzing...';
+        
         errorMessage.classList.add('hidden');
         loading.classList.remove('hidden');
         results.classList.add('hidden');
 
-        const teamId = document.getElementById('team-id').value;
-
         try {
-            if (!teamId || teamId < 1) {
-                throw new Error('Please enter a valid team ID');
-            }
-
             const response = await fetch('/analyze', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ team_id: teamId })
+                body: JSON.stringify({ team_id: teamIdInput.value })
             });
 
             const data = await response.json();
+            console.log('Received data:', data);
 
             if (!data.success) {
                 throw new Error(data.error || 'Analysis failed');
             }
 
-            // Display results
-            // In the displayResults section of main.js:
-
-            results.innerHTML = `
-                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                    <h3 class="text-lg font-semibold mb-3">Team Status</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="stat-item">
-                            <p class="stat-label">Team Name</p>
-                            <p class="stat-value">${data.team_status.name || 'N/A'}</p>
-                        </div>
-                        <div class="stat-item">
-                            <p class="stat-label">Overall Points</p>
-                            <p class="stat-value">${data.team_status.overall_points || '0'}</p>
-                        </div>
-                        <div class="stat-item">
-                            <p class="stat-label">Overall Rank</p>
-                            <p class="stat-value">${(data.team_status.overall_rank || 0).toLocaleString()}</p>
-                        </div>
-                        <div class="stat-item">
-                            <p class="stat-label">Bank Balance</p>
-                            <p class="stat-value">£${data.team_status.bank_balance ? data.team_status.bank_balance.toFixed(1) : '0.0'}m</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                    <h3 class="text-lg font-semibold mb-3">Current Squad</h3>
-                    <div class="grid gap-4">
-                        ${data.current_squad.map(player => `
-                            <div class="player-card">
-                                <div class="flex justify-between items-center">
-                                    <div>
-                                        <p class="font-semibold">${player.name || 'Unknown'}</p>
-                                        <p class="text-sm text-gray-600">${player.team || 'N/A'} - ${player.position || 'N/A'}</p>
-                                    </div>
-                                    <div class="text-right">
-                                        <p class="text-sm">£${player.price ? player.price.toFixed(1) : '0.0'}m</p>
-                                        <p class="text-sm">Form: ${player.form || '0.0'}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                    <h3 class="text-lg font-semibold mb-3">Captain Picks</h3>
-                    ${data.captain_picks.map((pick, index) => `
-                        <div class="player-card">
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <p class="font-semibold">
-                                        ${pick.name || 'Unknown'} (${pick.position || 'N/A'})
-                                        ${index === 0 ? '<span class="captain-badge">👑 Captain</span>' : 
-                                        index === 1 ? '<span class="vice-captain-badge">🥈 Vice Captain</span>' : ''}
-                                    </p>
-                                    <p class="text-sm text-gray-600">
-                                        ${pick.is_home ? 'HOME' : 'AWAY'} vs ${pick.opponent || 'N/A'}
-                                    </p>
-                                    <p class="text-sm text-gray-600">
-                                        Predicted Points: ${pick.predicted_points ? pick.predicted_points.toFixed(1) : '0.0'} | Form: ${pick.form || '0.0'}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                    <h3 class="text-lg font-semibold mb-3">Transfer Suggestions</h3>
-                    ${data.transfer_suggestions.map((transfer, index) => `
-                        <div class="mb-6 last:mb-0">
-                            <div class="flex items-center mb-2">
-                                <div class="flex-1 bg-red-50 p-3 rounded-lg">
-                                    <p class="font-semibold text-red-600">OUT: ${transfer.out.name || 'Unknown'}</p>
-                                    <p class="text-sm text-gray-600">Team: ${transfer.out.team || 'N/A'}</p>
-                                    <p class="text-sm text-gray-600">Form: ${transfer.out.form || '0.0'}</p>
-                                </div>
-                                <div class="mx-4 transfer-arrow">→</div>
-                                <div class="flex-1 bg-green-50 p-3 rounded-lg">
-                                    <p class="font-semibold text-green-600">IN: ${transfer.in.name || 'Unknown'}</p>
-                                    <p class="text-sm text-gray-600">Team: ${transfer.in.team || 'N/A'}</p>
-                                    <p class="text-sm text-gray-600">Form: ${transfer.in.form || '0.0'}</p>
-                                </div>
-                            </div>
-                            <div class="bg-gray-50 rounded p-3">
-                                <p class="text-sm">Price Change: £${transfer.price_diff ? transfer.price_diff.toFixed(1) : '0.0'}m</p>
-                                <p class="text-sm">Remaining Budget: £${transfer.remaining_budget ? transfer.remaining_budget.toFixed(1) : '0.0'}m</p>
-                                <p class="text-sm">Expected Point Gain: ${transfer.predicted_point_gain ? transfer.predicted_point_gain.toFixed(1) : '0.0'}</p>
-                                ${transfer.in.selected_by < 10 ? 
-                                    `<p class="text-sm text-blue-600 mt-1">
-                                        Differential Pick (${transfer.in.selected_by || '0'}% ownership)
-                                    </p>` : ''}
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-
-                ${data.considerations.inactive_players || data.considerations.out_of_form_players ? `
-                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                        <div class="flex">
-                            <div class="flex-shrink-0">
-                                ⚠️
-                            </div>
-                            <div class="ml-3">
-                                <h3 class="text-sm font-medium text-yellow-800">Considerations</h3>
-                                <div class="mt-2 text-sm text-yellow-700">
-                                    ${data.considerations.inactive_players ? 
-                                        '<p>• You have inactive players that might need attention</p>' : ''}
-                                    ${data.considerations.out_of_form_players ? 
-                                        '<p>• Some players in your squad are out of form</p>' : ''}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ` : ''}
-                `;
+            displayResults(data);
             results.classList.remove('hidden');
+            
         } catch (error) {
-            errorMessage.querySelector('p').textContent = error.message;
-            errorMessage.classList.remove('hidden');
-            results.classList.add('hidden');
+            console.error('Error:', error);
+            showError(error.message);
         } finally {
+            analyzeButton.disabled = false;
+            analyzeButton.innerHTML = 'Analyze';
             loading.classList.add('hidden');
         }
-    });
+    }
+
+    function displayResults(data) {
+        results.innerHTML = `
+            <!-- Team Status -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-lg font-semibold mb-4 text-blue-800">
+                    <i class="fas fa-shield-alt mr-2"></i>Team Status
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="stat-item">
+                        <p class="stat-label">Team Name</p>
+                        <p class="stat-value">${data.team_status.name}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Overall Points</p>
+                        <p class="stat-value">${data.team_status.overall_points}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Overall Rank</p>
+                        <p class="stat-value">${data.team_status.overall_rank.toLocaleString()}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Bank Balance</p>
+                        <p class="stat-value">£${data.team_status.bank_balance.toFixed(1)}m</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Captain Picks -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-lg font-semibold mb-4 text-blue-800">
+                    <i class="fas fa-star mr-2"></i>Captain Recommendations
+                </h3>
+                <div class="space-y-4">
+                    ${data.captain_picks.map((pick, index) => `
+                        <div class="player-card p-4 bg-gray-50 rounded-lg hover:shadow-md transition-all cursor-pointer"
+                             onclick="showPlayerDetails(${pick.player_id})">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-semibold text-lg">
+                                        ${pick.name}
+                                        ${index === 0 ? 
+                                            '<span class="ml-2 bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">👑 Captain</span>' : 
+                                            index === 1 ? 
+                                            '<span class="ml-2 bg-gray-100 text-gray-800 px-2 py-1 rounded-full text-sm">🥈 Vice</span>' : 
+                                            ''}
+                                    </p>
+                                    <p class="text-gray-600">${pick.team} - ${pick.position}</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="font-semibold text-blue-600">${pick.predicted_points.toFixed(1)} pts</p>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <!-- Transfer Suggestions -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-lg font-semibold mb-4 text-blue-800">
+                    <i class="fas fa-exchange-alt mr-2"></i>Transfer Suggestions
+                </h3>
+                <div class="space-y-6">
+                    ${data.transfer_suggestions.map((transfer, index) => `
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <div class="flex items-center gap-4">
+                                <!-- Player Out -->
+                                <div class="flex-1 bg-red-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition-all"
+                                    onclick="showPlayerDetails(${transfer.out?.id || 0})">
+                                    <p class="font-semibold text-red-600 mb-1">Transfer Out</p>
+                                    <div class="space-y-1">
+                                        <p class="font-medium">${transfer.out?.name || 'Unknown'}</p>
+                                        <p class="text-sm text-gray-600">Team: ${transfer.out?.team || 'N/A'}</p>
+                                        <p class="text-sm text-gray-600">Form: ${transfer.out?.form || '0.0'}</p>
+                                        <p class="text-sm text-gray-600">Price: £${(transfer.out?.price || 0).toFixed(1)}m</p>
+                                    </div>
+                                </div>
+
+                                <!-- Arrow and Stats -->
+                                <div class="flex flex-col items-center px-2">
+                                    <span class="text-2xl text-gray-400 mb-2">→</span>
+                                    <div class="text-center bg-white rounded-lg p-2 shadow-sm">
+                                        <p class="text-sm font-medium text-blue-600">+${(transfer.improvement || 0).toFixed(1)} pts</p>
+                                        <p class="text-xs text-gray-500">predicted gain</p>
+                                    </div>
+                                </div>
+
+                                <!-- Player In -->
+                                <div class="flex-1 bg-green-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition-all"
+                                    onclick="showPlayerDetails(${transfer.in?.id || 0})">
+                                    <p class="font-semibold text-green-600 mb-1">Transfer In</p>
+                                    <div class="space-y-1">
+                                        <p class="font-medium">${transfer.in?.name || 'Unknown'}</p>
+                                        <p class="text-sm text-gray-600">Team: ${transfer.in?.team || 'N/A'}</p>
+                                        <p class="text-sm text-gray-600">Form: ${transfer.in?.form || '0.0'}</p>
+                                        <p class="text-sm text-gray-600">Price: £${(transfer.in?.price || 0).toFixed(1)}m</p>
+                                        ${(transfer.in?.selected_by || 0) < 10 ? 
+                                            `<p class="text-xs text-blue-600 mt-1">Differential (${transfer.in?.selected_by || 0}% owned)</p>` : ''}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Transfer Summary -->
+                            <div class="mt-3 pt-3 border-t border-gray-200 text-sm text-gray-600 flex justify-between">
+                                <span>Price Change: ${(transfer.price_diff || 0) > 0 ? '+' : ''}£${(transfer.price_diff || 0).toFixed(1)}m</span>
+                                <span>Budget After: £${(transfer.remaining_budget || 0).toFixed(1)}m</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <!-- Current Squad -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                <h3 class="text-lg font-semibold mb-4 text-blue-800">
+                    <i class="fas fa-users mr-2"></i>Current Squad
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    ${data.current_squad.map(player => `
+                        <div class="player-card p-4 bg-gray-50 rounded-lg hover:shadow-md transition-all cursor-pointer"
+                             onclick="showPlayerDetails(${player.id})">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="font-semibold">${player.name}</p>
+                                    <p class="text-sm text-gray-600">${player.team} - ${player.position}</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-sm">£${player.price.toFixed(1)}m</p>
+                                    <p class="text-sm">Form: ${player.form}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <!-- Info Section -->
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-info-circle text-blue-400"></i>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-sm text-blue-700">
+                            Want to understand how we calculate predicted points?
+                            <a href="/methodology" class="underline font-semibold">Learn about our methodology</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    function showError(message) {
+        const errorText = errorMessage.querySelector('p');
+        errorText.textContent = message;
+        errorMessage.classList.remove('hidden');
+    }
+});
+
+async function showPlayerDetails(playerId) {
+    try {
+        const response = await fetch(`/player/${playerId}`);
+        const player = await response.json();
+        
+        const modal = document.getElementById('playerModal');
+        const content = document.getElementById('modalContent');
+        
+        content.innerHTML = `
+            <div class="space-y-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="text-xl font-bold">${player.name}</h4>
+                        <p class="text-gray-600">${player.team} - ${player.position}</p>
+                    </div>
+                    <p class="text-xl font-bold">£${player.price.toFixed(1)}m</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="stat-item">
+                        <p class="stat-label">Total Points</p>
+                        <p class="stat-value">${player.total_points}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Form</p>
+                        <p class="stat-value">${player.form}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Points Per Game</p>
+                        <p class="stat-value">${player.points_per_game}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Minutes Per Game</p>
+                        <p class="stat-value">${player.minutes_per_game}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Games Played</p>
+                        <p class="stat-value">${player.games_played}</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Selected By</p>
+                        <p class="stat-value">${player.selected_by}%</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Predicted Points</p>
+                        <p class="stat-value">${player.predicted_points ? player.predicted_points.toFixed(1) : '0.0'}</p>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <h5 class="font-semibold mb-3">Recent Performance</h5>
+                    <canvas id="playerPerformanceChart"></canvas>
+                </div>
+            </div>
+        `;
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        
+        const ctx = document.getElementById('playerPerformanceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['GW-4', 'GW-3', 'GW-2', 'GW-1', 'Last GW'],
+                datasets: [{
+                    label: 'Points',
+                    data: player.recent_performance.points.reverse(),
+                    borderColor: 'rgb(59, 130, 246)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Last 5 Gameweeks Performance'
+                    }
+                }
+            }
+        });
+        
+    } catch (error) {
+        console.error('Error fetching player details:', error);
+    }
+}
+
+function closePlayerModal() {
+    const modal = document.getElementById('playerModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+}
+
+// Close modal when clicking outside
+document.getElementById('playerModal')?.addEventListener('click', function(e) {
+    if (e.target === this) {
+        closePlayerModal();
+    }
 });

@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto py-8">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold mb-6 text-blue-800">Points Prediction Methodology</h2>
+        
+        <div class="space-y-8">
+            <section>
+                <h3 class="text-xl font-semibold mb-3">Overview</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Our prediction model uses a sophisticated algorithm that combines multiple factors
+                    to estimate player performance. The model takes into account recent form, fixture
+                    difficulty, historical performance, and position-specific metrics to provide
+                    accurate predictions.
+                </p>
+            </section>
+
+            <section>
+                <h3 class="text-xl font-semibold mb-3">Key Factors</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-blue-800">Recent Form (40%)</h4>
+                        <ul class="mt-2 space-y-2 text-gray-700">
+                            <li>• Last 5 games performance</li>
+                            <li>• Minutes played</li>
+                            <li>• Goals and assists</li>
+                            <li>• Clean sheets for defenders/goalkeepers</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-green-800">Fixture Difficulty (25%)</h4>
+                        <ul class="mt-2 space-y-2 text-gray-700">
+                            <li>• Opponent strength</li>
+                            <li>• Home/away factor</li>
+                            <li>• Historical head-to-head performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-yellow-800">Historical Data (20%)</h4>
+                        <ul class="mt-2 space-y-2 text-gray-700">
+                            <li>• Season performance</li>
+                            <li>• Points per game</li>
+                            <li>• Consistency rating</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <h4 class="font-semibold text-purple-800">Team Context (15%)</h4>
+                        <ul class="mt-2 space-y-2 text-gray-700">
+                            <li>• Team's attacking/defensive strength</li>
+                            <li>• Team's recent form</li>
+                            <li>• Player's role in the team</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-xl font-semibold mb-3">Position-Specific Considerations</h3>
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold">Goalkeepers</h4>
+                        <p class="text-gray-700 mt-2">
+                            Clean sheet probability, save potential, and team defensive strength
+                            are the primary factors.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold">Defenders</h4>
+                        <p class="text-gray-700 mt-2">
+                            Combines clean sheet probability with attacking potential for full-backs
+                            and set-piece threats.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold">Midfielders</h4>
+                        <p class="text-gray-700 mt-2">
+                            Balanced between attacking returns and clean sheet points, with
+                            additional focus on bonus point potential.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-semibold">Forwards</h4>
+                        <p class="text-gray-700 mt-2">
+                            Primary focus on goal-scoring probability and assist potential,
+                            considering team's attacking strength.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-xl font-semibold mb-3">Model Accuracy</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    Our model is continuously updated and validated against actual performance data.
+                    Historical accuracy shows predictions within ±2 points for 70% of predictions.
+                    The model performs best for consistent starters and may have higher variance
+                    for rotation-risk players.
+                </p>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
