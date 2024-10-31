@@ -798,3 +798,22 @@
 2024-10-30 17:13:21,848 - INFO - 127.0.0.1 - - [30/Oct/2024 17:13:21] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
 2024-10-30 17:13:21,942 - INFO - 127.0.0.1 - - [30/Oct/2024 17:13:21] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
 2024-10-30 17:13:22,827 - INFO - 127.0.0.1 - - [30/Oct/2024 17:13:22] "GET /api/players?_=1730308401680 HTTP/1.1" 200 -
+2024-10-31 13:26:27,249 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 13:26:27,250 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 13:26:27,252 - INFO -  * Restarting with stat
+2024-10-31 13:26:28,460 - WARNING -  * Debugger is active!
+2024-10-31 13:26:28,463 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 13:26:30,726 - INFO - 127.0.0.1 - - [31/Oct/2024 13:26:30] "GET / HTTP/1.1" 200 -
+2024-10-31 13:26:30,856 - INFO - 127.0.0.1 - - [31/Oct/2024 13:26:30] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 13:26:30,936 - INFO - 127.0.0.1 - - [31/Oct/2024 13:26:30] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 13:26:31,759 - INFO - 127.0.0.1 - - [31/Oct/2024 13:26:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-31 13:26:32,698 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 13:26:32,783 - INFO - Fetching fixtures data...
+2024-10-31 13:26:32,828 - INFO - Fetching data for team ID: 6044732
+2024-10-31 13:26:32,887 - INFO - Updating predictions for all players...
+2024-10-31 13:27:05,515 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:05] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 13:27:17,688 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:17] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-10-31 13:27:20,111 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:20] "GET /methodology HTTP/1.1" 200 -
+2024-10-31 13:27:20,397 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:20] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 13:27:20,443 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:20] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
