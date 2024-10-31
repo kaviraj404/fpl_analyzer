@@ -2,31 +2,40 @@
 
 {% block content %}
 <div class="max-w-4xl mx-auto">
+    <!-- Team Analysis Form -->
     <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-        <h2 class="text-xl font-semibold mb-4">Team Analysis</h2>
+        <h2 class="text-xl font-semibold mb-4 text-blue-800">Team Analysis</h2>
         <form id="analysis-form" class="mb-4">
             <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="team-id">
                     Team ID
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                       id="team-id" type="number" required min="1"
-                       placeholder="Enter your FPL team ID">
+                <div class="flex gap-4">
+                    <input class="flex-1 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500"
+                           id="team-id" 
+                           name="team_id"
+                           type="number" 
+                           required 
+                           min="1"
+                           value="6044732">
+                    <button type="submit" 
+                            id="analyze-button"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        Analyze
+                    </button>
+                </div>
                 <p class="text-sm text-gray-500 mt-1">
                     Find your team ID in the URL when you visit your FPL team page
                 </p>
             </div>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit">
-                Analyze Team
-            </button>
         </form>
     </div>
 
+    <!-- Error Message -->
     <div id="error-message" class="hidden bg-red-50 border-l-4 border-red-400 p-4 mb-6">
         <div class="flex">
             <div class="flex-shrink-0">
-                ❌
+                <i class="fas fa-exclamation-circle text-red-400"></i>
             </div>
             <div class="ml-3">
                 <p class="text-sm text-red-700"></p>
@@ -34,14 +43,17 @@
         </div>
     </div>
 
-    <div id="results" class="hidden">
-        <!-- Results will be populated by JavaScript -->
+    <!-- Loading Spinner -->
+    <div id="loading" class="hidden">
+        <div class="flex flex-col items-center justify-center py-8">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
+            <p class="mt-4 text-gray-600">Analyzing your team...</p>
+        </div>
     </div>
 
-    <div id="loading" class="hidden">
-        <div class="flex justify-center items-center py-8">
-            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div>
-        </div>
+    <!-- Results Container -->
+    <div id="results" class="hidden space-y-6">
+        <!-- Results will be populated by JavaScript -->
     </div>
 </div>
 {% endblock %}

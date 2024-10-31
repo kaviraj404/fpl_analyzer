@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto py-8">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold text-blue-800">All FPL Players</h2>
+            <select id="positionFilter" 
+                    class="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="">All Positions</option>
+                <option value="GKP">Goalkeepers</option>
+                <option value="DEF">Defenders</option>
+                <option value="MID">Midfielders</option>
+                <option value="FWD">Forwards</option>
+            </select>
+        </div>
+        
+        <div class="overflow-x-auto">
+            <table id="playersTable" class="w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-4 py-2">Name</th>
+                        <th class="px-4 py-2">Team</th>
+                        <th class="px-4 py-2">Position</th>
+                        <th class="px-4 py-2">Price</th>
+                        <th class="px-4 py-2">Form</th>
+                        <th class="px-4 py-2">Total Points</th>
+                        <th class="px-4 py-2">PPG</th>
+                        <th class="px-4 py-2">Mins/Game</th>
+                        <th class="px-4 py-2">Games</th>
+                        <th class="px-4 py-2">Predicted</th>
+                        <th class="px-4 py-2">Selected</th>
+                        <th class="px-4 py-2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated by DataTables -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    const table = $('#playersTable').DataTable({
+        ajax: '/api/players',
+        columns: [
+            { 
+                data: 'name',
+                render: function(data, type, row) {
+                    return `<a href="#" class="text-blue-600 hover:text-blue-800" 
+                            onclick="showPlayerDetails(${row.id})">${data}</a>`;
+                }
+            },
+            { data: 'team' },
+            { data: 'position' },
+            { 
+                data: 'price',
+                render: price => `£${price.toFixed(1)}m`
+            },
+            { data: 'form' },
+            { data: 'total_points' },
+            { data: 'points_per_game' },
+            { 
+                data: 'minutes_per_game',
+                render: mins => mins.toFixed(1)
+            },
+            { data: 'games_played' },
+            { 
+                data: 'predicted_points',
+                render: pts => pts ? pts.toFixed(1) : '0.0'
+            },
+            { 
+                data: 'selected_by',
+                render: pct => `${pct}%`
+            },
+            {
+                data: null,
+                render: function(data, type, row) {
+                    return `<button onclick="showPlayerDetails(${row.id})"
+                            class="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600">
+                            View
+                            </button>`;
+                }
+            }
+        ],
+        order: [[5, 'desc']],
+        pageLength: 25,
+        responsive: true
+    });
+
+    $('#positionFilter').on('change', function() {
+        table.column(2).search(this.value).draw();
+    });
+});
+</script>
+{% endblock %}
