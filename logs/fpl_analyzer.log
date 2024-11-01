@@ -817,3 +817,804 @@
 2024-10-31 13:27:20,111 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:20] "GET /methodology HTTP/1.1" 200 -
 2024-10-31 13:27:20,397 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:20] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
 2024-10-31 13:27:20,443 - INFO - 127.0.0.1 - - [31/Oct/2024 13:27:20] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 15:26:31,384 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 15:26:31,385 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 15:26:31,388 - INFO -  * Restarting with stat
+2024-10-31 15:26:32,387 - WARNING -  * Debugger is active!
+2024-10-31 15:26:32,391 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 15:26:39,917 - INFO - 127.0.0.1 - - [31/Oct/2024 15:26:39] "GET / HTTP/1.1" 200 -
+2024-10-31 15:26:40,017 - INFO - 127.0.0.1 - - [31/Oct/2024 15:26:40] "GET /css/styles.css HTTP/1.1" 200 -
+2024-10-31 15:26:40,184 - INFO - 127.0.0.1 - - [31/Oct/2024 15:26:40] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 15:26:41,896 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 15:26:42,001 - INFO - Fetching fixtures data...
+2024-10-31 15:26:42,046 - INFO - Fetching data for team ID: 6044732
+2024-10-31 15:26:42,124 - INFO - Updating predictions for all players...
+2024-10-31 15:27:07,692 - INFO - 127.0.0.1 - - [31/Oct/2024 15:27:07] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 15:33:09,406 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 15:33:09,407 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 15:33:09,410 - INFO -  * Restarting with stat
+2024-10-31 15:33:10,626 - WARNING -  * Debugger is active!
+2024-10-31 15:33:10,629 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 15:33:13,494 - INFO - 127.0.0.1 - - [31/Oct/2024 15:33:13] "GET / HTTP/1.1" 200 -
+2024-10-31 15:33:13,579 - INFO - 127.0.0.1 - - [31/Oct/2024 15:33:13] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 15:33:13,777 - INFO - 127.0.0.1 - - [31/Oct/2024 15:33:13] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 15:33:16,082 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 15:33:16,182 - INFO - Fetching fixtures data...
+2024-10-31 15:33:16,220 - INFO - Fetching data for team ID: 6044732
+2024-10-31 15:33:16,291 - INFO - Updating predictions for all players...
+2024-10-31 15:33:44,404 - INFO - 127.0.0.1 - - [31/Oct/2024 15:33:44] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 16:11:18,774 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 16:11:18,775 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 16:11:18,778 - INFO -  * Restarting with stat
+2024-10-31 16:11:20,045 - WARNING -  * Debugger is active!
+2024-10-31 16:11:20,048 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 16:11:22,263 - INFO - 127.0.0.1 - - [31/Oct/2024 16:11:22] "GET / HTTP/1.1" 200 -
+2024-10-31 16:11:22,346 - INFO - 127.0.0.1 - - [31/Oct/2024 16:11:22] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 16:11:22,563 - INFO - 127.0.0.1 - - [31/Oct/2024 16:11:22] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 16:11:23,989 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 16:11:24,098 - INFO - Fetching fixtures data...
+2024-10-31 16:11:24,147 - INFO - Fetching data for team ID: 6044732
+2024-10-31 16:11:24,229 - INFO - Updating predictions for all players...
+2024-10-31 16:11:56,969 - INFO - 127.0.0.1 - - [31/Oct/2024 16:11:56] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 16:13:40,919 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 16:13:40,920 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 16:13:40,922 - INFO -  * Restarting with stat
+2024-10-31 16:13:42,091 - WARNING -  * Debugger is active!
+2024-10-31 16:13:42,095 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 16:13:45,628 - INFO - 127.0.0.1 - - [31/Oct/2024 16:13:45] "GET / HTTP/1.1" 200 -
+2024-10-31 16:13:45,717 - INFO - 127.0.0.1 - - [31/Oct/2024 16:13:45] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 16:13:45,908 - INFO - 127.0.0.1 - - [31/Oct/2024 16:13:45] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 16:13:47,494 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 16:13:47,560 - INFO - Fetching fixtures data...
+2024-10-31 16:13:47,598 - INFO - Fetching data for team ID: 6044732
+2024-10-31 16:13:47,663 - INFO - Updating predictions for all players...
+2024-10-31 16:14:17,157 - INFO - 127.0.0.1 - - [31/Oct/2024 16:14:17] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 22:29:38,719 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 22:29:38,720 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 22:29:38,723 - INFO -  * Restarting with stat
+2024-10-31 22:29:40,404 - WARNING -  * Debugger is active!
+2024-10-31 22:29:40,449 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 22:29:41,879 - INFO - 127.0.0.1 - - [31/Oct/2024 22:29:41] "GET / HTTP/1.1" 200 -
+2024-10-31 22:29:42,147 - INFO - 127.0.0.1 - - [31/Oct/2024 22:29:42] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:29:42,422 - INFO - 127.0.0.1 - - [31/Oct/2024 22:29:42] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 22:29:43,262 - INFO - 127.0.0.1 - - [31/Oct/2024 22:29:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-31 22:29:43,655 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 22:29:43,733 - INFO - Fetching fixtures data...
+2024-10-31 22:29:43,772 - INFO - Fetching data for team ID: 6044732
+2024-10-31 22:29:43,838 - INFO - Updating predictions for all players...
+2024-10-31 22:30:09,741 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:09] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 22:30:29,995 - ERROR - Error fetching player history: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:29,996 - ERROR - Error fetching player details: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:30,000 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:30] "[35m[1mGET /player/0 HTTP/1.1[0m" 500 -
+2024-10-31 22:30:30,518 - ERROR - Error fetching player history: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:30,519 - ERROR - Error fetching player details: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:30,523 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:30] "[35m[1mGET /player/0 HTTP/1.1[0m" 500 -
+2024-10-31 22:30:31,029 - ERROR - Error fetching player history: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:31,030 - ERROR - Error fetching player details: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:31,035 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:31] "[35m[1mGET /player/0 HTTP/1.1[0m" 500 -
+2024-10-31 22:30:31,420 - ERROR - Error fetching player history: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:31,421 - ERROR - Error fetching player details: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-10-31 22:30:31,424 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:31] "[35m[1mGET /player/0 HTTP/1.1[0m" 500 -
+2024-10-31 22:30:33,267 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:33] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-10-31 22:30:33,517 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:33] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-10-31 22:30:33,701 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:33] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-10-31 22:30:35,633 - INFO - 127.0.0.1 - - [31/Oct/2024 22:30:35] "GET /player/99 HTTP/1.1" 200 -
+2024-10-31 22:35:22,449 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 22:35:22,450 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 22:35:22,452 - INFO -  * Restarting with stat
+2024-10-31 22:35:23,774 - WARNING -  * Debugger is active!
+2024-10-31 22:35:23,778 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 22:35:27,143 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:27] "GET / HTTP/1.1" 200 -
+2024-10-31 22:35:27,266 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:27] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:35:27,428 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:27] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 22:35:29,623 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:29] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:35:29,668 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:29] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:35:29,888 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:29] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:35:32,072 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:32] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:35:33,160 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:33] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:35:33,162 - INFO - 127.0.0.1 - - [31/Oct/2024 22:35:33] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:01,953 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 22:36:01,954 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 22:36:01,958 - INFO -  * Restarting with stat
+2024-10-31 22:36:03,562 - WARNING -  * Debugger is active!
+2024-10-31 22:36:03,567 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 22:36:04,544 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:04] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:36:04,670 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:04] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:04,783 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:04] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:06,702 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:06] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:36:06,721 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:06] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:06,963 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:06] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:09,181 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:09] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:36:09,214 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:09] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:09,449 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:09] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:25,907 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:25] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:36:25,929 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:25] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:26,168 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:26] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:28,012 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:28] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:36:28,037 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:28] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:28,275 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:28] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:30,289 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:30] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:36:30,334 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:30] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:30,548 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:30] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:32,039 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:32] "GET / HTTP/1.1" 200 -
+2024-10-31 22:36:32,183 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:32] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:32,288 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:32] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:34,242 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:34] "GET /players HTTP/1.1" 200 -
+2024-10-31 22:36:34,469 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:34] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:34,591 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:34] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:35,831 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:35] "GET /api/players?_=1730414194435 HTTP/1.1" 200 -
+2024-10-31 22:36:39,569 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:39] "GET / HTTP/1.1" 200 -
+2024-10-31 22:36:39,877 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:39] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:39,915 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:39] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:36:41,049 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:41] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:36:41,399 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:41] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:36:41,400 - INFO - 127.0.0.1 - - [31/Oct/2024 22:36:41] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:37:38,150 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 22:37:38,152 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 22:37:38,155 - INFO -  * Restarting with stat
+2024-10-31 22:37:39,568 - WARNING -  * Debugger is active!
+2024-10-31 22:37:39,572 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 22:37:42,219 - INFO - 127.0.0.1 - - [31/Oct/2024 22:37:42] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:37:42,300 - INFO - 127.0.0.1 - - [31/Oct/2024 22:37:42] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:37:42,543 - INFO - 127.0.0.1 - - [31/Oct/2024 22:37:42] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 22:37:44,255 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 22:37:44,341 - INFO - Fetching fixtures data...
+2024-10-31 22:37:44,383 - INFO - Fetching data for team ID: 6044732
+2024-10-31 22:37:44,463 - INFO - Updating predictions for all players...
+2024-10-31 22:38:11,589 - INFO - 127.0.0.1 - - [31/Oct/2024 22:38:11] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 22:40:00,514 - INFO - 127.0.0.1 - - [31/Oct/2024 22:40:00] "GET /player/99 HTTP/1.1" 200 -
+2024-10-31 22:53:00,684 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 22:53:00,723 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 22:53:00,727 - INFO -  * Restarting with stat
+2024-10-31 22:53:02,670 - WARNING -  * Debugger is active!
+2024-10-31 22:53:02,675 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 22:53:02,815 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:02] "GET /?team_id=6044732 HTTP/1.1" 200 -
+2024-10-31 22:53:02,977 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:02] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:53:03,006 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:03] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 22:53:04,981 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 22:53:05,077 - INFO - Fetching fixtures data...
+2024-10-31 22:53:05,123 - INFO - Fetching data for team ID: 6044732
+2024-10-31 22:53:05,181 - INFO - Updating predictions for all players...
+2024-10-31 22:53:29,184 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:29] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 22:53:32,802 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:32] "GET /player/117 HTTP/1.1" 200 -
+2024-10-31 22:53:51,448 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:51] "GET /players HTTP/1.1" 200 -
+2024-10-31 22:53:51,505 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:51] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:53:51,620 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:51] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:53:53,055 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:53] "GET /api/players?_=1730415231660 HTTP/1.1" 200 -
+2024-10-31 22:53:57,407 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:57] "GET / HTTP/1.1" 200 -
+2024-10-31 22:53:57,710 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:57] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:53:57,759 - INFO - 127.0.0.1 - - [31/Oct/2024 22:53:57] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:54:05,263 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 22:54:05,402 - INFO - Fetching fixtures data...
+2024-10-31 22:54:05,457 - INFO - Fetching data for team ID: 6044732
+2024-10-31 22:54:05,535 - INFO - Updating predictions for all players...
+2024-10-31 22:54:34,818 - INFO - 127.0.0.1 - - [31/Oct/2024 22:54:34] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 22:54:46,067 - INFO - 127.0.0.1 - - [31/Oct/2024 22:54:46] "GET /player/99 HTTP/1.1" 200 -
+2024-10-31 22:54:59,384 - INFO - 127.0.0.1 - - [31/Oct/2024 22:54:59] "GET /player/117 HTTP/1.1" 200 -
+2024-10-31 22:55:20,006 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:20] "GET /methodology HTTP/1.1" 200 -
+2024-10-31 22:55:20,258 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:20] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:55:20,360 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:20] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:55:28,434 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:28] "GET /methodology HTTP/1.1" 200 -
+2024-10-31 22:55:28,542 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:28] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:55:28,709 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:28] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:55:31,669 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:31] "GET /players HTTP/1.1" 200 -
+2024-10-31 22:55:31,977 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:31] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:55:32,033 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:32] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:55:33,464 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:33] "GET /api/players?_=1730415331935 HTTP/1.1" 200 -
+2024-10-31 22:55:39,232 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:39] "GET /players HTTP/1.1" 200 -
+2024-10-31 22:55:39,532 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:39] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:55:39,584 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:39] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:55:40,961 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:40] "GET /api/players?_=1730415339473 HTTP/1.1" 200 -
+2024-10-31 22:55:45,592 - INFO - 127.0.0.1 - - [31/Oct/2024 22:55:45] "GET /player/99 HTTP/1.1" 200 -
+2024-10-31 22:56:05,906 - INFO - 127.0.0.1 - - [31/Oct/2024 22:56:05] "GET / HTTP/1.1" 200 -
+2024-10-31 22:56:05,995 - INFO - 127.0.0.1 - - [31/Oct/2024 22:56:05] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 22:56:06,155 - INFO - 127.0.0.1 - - [31/Oct/2024 22:56:06] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-10-31 22:56:08,012 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 22:56:08,156 - INFO - Fetching fixtures data...
+2024-10-31 22:56:08,222 - INFO - Fetching data for team ID: 6044732
+2024-10-31 22:56:08,290 - INFO - Updating predictions for all players...
+2024-10-31 22:56:36,018 - INFO - 127.0.0.1 - - [31/Oct/2024 22:56:36] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 22:56:53,041 - INFO - 127.0.0.1 - - [31/Oct/2024 22:56:53] "GET /player/99 HTTP/1.1" 200 -
+2024-10-31 22:56:57,754 - INFO - 127.0.0.1 - - [31/Oct/2024 22:56:57] "GET /player/252 HTTP/1.1" 200 -
+2024-10-31 22:57:14,901 - INFO - 127.0.0.1 - - [31/Oct/2024 22:57:14] "GET /player/99 HTTP/1.1" 200 -
+2024-10-31 23:10:46,017 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 23:10:46,019 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 23:10:46,023 - INFO -  * Restarting with stat
+2024-10-31 23:10:47,363 - WARNING -  * Debugger is active!
+2024-10-31 23:10:47,368 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 23:10:53,234 - INFO - 127.0.0.1 - - [31/Oct/2024 23:10:53] "GET / HTTP/1.1" 200 -
+2024-10-31 23:10:53,525 - INFO - 127.0.0.1 - - [31/Oct/2024 23:10:53] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 23:10:53,911 - INFO - 127.0.0.1 - - [31/Oct/2024 23:10:53] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 23:11:09,134 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 23:11:09,255 - INFO - Fetching fixtures data...
+2024-10-31 23:11:09,315 - INFO - Fetching data for team ID: 6044732
+2024-10-31 23:11:09,381 - INFO - Updating predictions for all players...
+2024-10-31 23:11:36,703 - INFO - 127.0.0.1 - - [31/Oct/2024 23:11:36] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 23:11:42,253 - INFO - 127.0.0.1 - - [31/Oct/2024 23:11:42] "GET /player/252 HTTP/1.1" 200 -
+2024-10-31 23:12:07,104 - INFO - 127.0.0.1 - - [31/Oct/2024 23:12:07] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 23:12:24,731 - INFO - 127.0.0.1 - - [31/Oct/2024 23:12:24] "GET /player/117 HTTP/1.1" 200 -
+2024-10-31 23:24:37,897 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 23:24:37,899 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 23:24:37,904 - INFO -  * Restarting with stat
+2024-10-31 23:24:39,590 - WARNING -  * Debugger is active!
+2024-10-31 23:24:39,593 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 23:27:26,950 - INFO - 127.0.0.1 - - [31/Oct/2024 23:27:26] "GET /player/117 HTTP/1.1" 200 -
+2024-10-31 23:29:03,988 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 23:29:03,991 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 23:29:03,994 - INFO -  * Restarting with stat
+2024-10-31 23:29:05,632 - WARNING -  * Debugger is active!
+2024-10-31 23:29:05,636 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 23:29:08,686 - INFO - 127.0.0.1 - - [31/Oct/2024 23:29:08] "GET / HTTP/1.1" 200 -
+2024-10-31 23:29:09,590 - INFO - 127.0.0.1 - - [31/Oct/2024 23:29:09] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 23:29:09,873 - INFO - 127.0.0.1 - - [31/Oct/2024 23:29:09] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 23:29:11,439 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 23:29:11,517 - INFO - Fetching fixtures data...
+2024-10-31 23:29:11,554 - INFO - Fetching data for team ID: 6044732
+2024-10-31 23:29:11,617 - INFO - Updating predictions for all players...
+2024-10-31 23:29:36,824 - INFO - 127.0.0.1 - - [31/Oct/2024 23:29:36] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 23:29:47,038 - INFO - 127.0.0.1 - - [31/Oct/2024 23:29:47] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 23:31:54,666 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 23:31:54,667 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 23:31:54,670 - INFO -  * Restarting with stat
+2024-10-31 23:31:56,534 - WARNING -  * Debugger is active!
+2024-10-31 23:31:56,538 - INFO -  * Debugger PIN: 804-260-490
+2024-10-31 23:31:58,032 - INFO - 127.0.0.1 - - [31/Oct/2024 23:31:58] "GET / HTTP/1.1" 200 -
+2024-10-31 23:31:58,136 - INFO - 127.0.0.1 - - [31/Oct/2024 23:31:58] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-10-31 23:31:58,331 - INFO - 127.0.0.1 - - [31/Oct/2024 23:31:58] "GET /js/main.js HTTP/1.1" 200 -
+2024-10-31 23:32:01,696 - INFO - Fetching FPL data for team 6044732...
+2024-10-31 23:32:01,787 - INFO - Fetching fixtures data...
+2024-10-31 23:32:01,834 - INFO - Fetching data for team ID: 6044732
+2024-10-31 23:32:01,895 - INFO - Updating predictions for all players...
+2024-10-31 23:32:27,174 - INFO - 127.0.0.1 - - [31/Oct/2024 23:32:27] "POST /analyze HTTP/1.1" 200 -
+2024-10-31 23:32:36,418 - INFO - 127.0.0.1 - - [31/Oct/2024 23:32:36] "GET /player/99 HTTP/1.1" 200 -
+2024-11-01 11:19:56,061 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 11:19:56,063 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 11:19:56,068 - INFO -  * Restarting with stat
+2024-11-01 11:19:57,814 - WARNING -  * Debugger is active!
+2024-11-01 11:19:57,855 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 11:20:00,646 - INFO - 127.0.0.1 - - [01/Nov/2024 11:20:00] "GET / HTTP/1.1" 200 -
+2024-11-01 11:20:00,890 - INFO - 127.0.0.1 - - [01/Nov/2024 11:20:00] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 11:20:01,336 - INFO - 127.0.0.1 - - [01/Nov/2024 11:20:01] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 11:20:02,206 - INFO - 127.0.0.1 - - [01/Nov/2024 11:20:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-01 11:20:02,691 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 11:20:02,812 - INFO - Fetching fixtures data...
+2024-11-01 11:20:02,857 - INFO - Fetching data for team ID: 6044732
+2024-11-01 11:20:02,916 - INFO - Updating predictions for all players...
+2024-11-01 11:20:26,544 - INFO - 127.0.0.1 - - [01/Nov/2024 11:20:26] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 11:21:42,238 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 11:21:42,239 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 11:21:42,243 - INFO -  * Restarting with stat
+2024-11-01 11:21:43,857 - WARNING -  * Debugger is active!
+2024-11-01 11:21:43,860 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 11:21:45,739 - INFO - 127.0.0.1 - - [01/Nov/2024 11:21:45] "GET / HTTP/1.1" 200 -
+2024-11-01 11:21:45,835 - INFO - 127.0.0.1 - - [01/Nov/2024 11:21:45] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 11:21:46,024 - INFO - 127.0.0.1 - - [01/Nov/2024 11:21:46] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 11:21:48,662 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 11:21:48,757 - INFO - Fetching fixtures data...
+2024-11-01 11:21:48,797 - INFO - Fetching data for team ID: 6044732
+2024-11-01 11:21:48,854 - INFO - Updating predictions for all players...
+2024-11-01 11:22:12,784 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:12] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 11:22:17,239 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:17] "GET /player/117 HTTP/1.1" 200 -
+2024-11-01 11:22:23,186 - ERROR - Error fetching player history: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-11-01 11:22:23,190 - ERROR - Error fetching player details: 404 Client Error: Not Found for url: https://fantasy.premierleague.com/api/element-summary/0/
+2024-11-01 11:22:23,194 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:23] "[35m[1mGET /player/0 HTTP/1.1[0m" 500 -
+2024-11-01 11:22:25,155 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:25] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 11:22:28,552 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:28] "GET /players HTTP/1.1" 200 -
+2024-11-01 11:22:28,721 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:28] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 11:22:28,728 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:28] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 11:22:29,975 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:29] "GET /api/players?_=1730460148764 HTTP/1.1" 200 -
+2024-11-01 11:22:32,903 - INFO - 127.0.0.1 - - [01/Nov/2024 11:22:32] "GET /player/328 HTTP/1.1" 200 -
+2024-11-01 11:23:51,035 - INFO - 127.0.0.1 - - [01/Nov/2024 11:23:51] "GET /players HTTP/1.1" 200 -
+2024-11-01 11:23:51,099 - INFO - 127.0.0.1 - - [01/Nov/2024 11:23:51] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 11:23:51,277 - INFO - 127.0.0.1 - - [01/Nov/2024 11:23:51] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 11:23:52,434 - INFO - 127.0.0.1 - - [01/Nov/2024 11:23:52] "GET /api/players?_=1730460231397 HTTP/1.1" 200 -
+2024-11-01 11:23:54,572 - INFO - 127.0.0.1 - - [01/Nov/2024 11:23:54] "GET / HTTP/1.1" 200 -
+2024-11-01 11:23:54,681 - INFO - 127.0.0.1 - - [01/Nov/2024 11:23:54] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 11:23:54,837 - INFO - 127.0.0.1 - - [01/Nov/2024 11:23:54] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 12:53:07,554 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 12:53:07,656 - INFO - Fetching fixtures data...
+2024-11-01 12:53:07,717 - INFO - Fetching data for team ID: 6044732
+2024-11-01 12:53:07,785 - INFO - Updating predictions for all players...
+2024-11-01 12:53:33,834 - INFO - 127.0.0.1 - - [01/Nov/2024 12:53:33] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 12:53:52,107 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 12:53:52,109 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 12:53:52,112 - INFO -  * Restarting with stat
+2024-11-01 12:53:53,691 - WARNING -  * Debugger is active!
+2024-11-01 12:53:53,695 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 12:53:55,554 - INFO - 127.0.0.1 - - [01/Nov/2024 12:53:55] "GET / HTTP/1.1" 200 -
+2024-11-01 12:53:55,721 - INFO - 127.0.0.1 - - [01/Nov/2024 12:53:55] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 12:53:55,865 - INFO - 127.0.0.1 - - [01/Nov/2024 12:53:55] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 12:53:58,483 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 12:53:58,607 - INFO - Fetching fixtures data...
+2024-11-01 12:53:58,664 - INFO - Fetching data for team ID: 6044732
+2024-11-01 12:53:58,737 - INFO - Updating predictions for all players...
+2024-11-01 12:54:25,332 - INFO - 127.0.0.1 - - [01/Nov/2024 12:54:25] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 13:01:17,313 - INFO - 127.0.0.1 - - [01/Nov/2024 13:01:17] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:04:31,550 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 13:04:31,551 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 13:04:31,556 - INFO -  * Restarting with stat
+2024-11-01 13:04:33,141 - WARNING -  * Debugger is active!
+2024-11-01 13:04:33,145 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 13:04:38,110 - INFO - 127.0.0.1 - - [01/Nov/2024 13:04:38] "GET / HTTP/1.1" 200 -
+2024-11-01 13:04:38,232 - INFO - 127.0.0.1 - - [01/Nov/2024 13:04:38] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:04:38,343 - INFO - 127.0.0.1 - - [01/Nov/2024 13:04:38] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 13:04:40,522 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 13:04:40,654 - INFO - Fetching fixtures data...
+2024-11-01 13:04:40,708 - INFO - Fetching data for team ID: 6044732
+2024-11-01 13:04:40,784 - INFO - Updating predictions for all players...
+2024-11-01 13:05:05,637 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:05] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 13:05:08,380 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:08] "GET /player/99 HTTP/1.1" 200 -
+2024-11-01 13:05:12,793 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:12] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:05:13,370 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:13] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:05:13,855 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:13] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:05:16,445 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:16] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:05:17,160 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:17] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:05:17,415 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:17] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:05:23,730 - INFO - 127.0.0.1 - - [01/Nov/2024 13:05:23] "GET /player/99 HTTP/1.1" 200 -
+2024-11-01 13:08:51,264 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 13:08:51,265 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 13:08:51,267 - INFO -  * Restarting with stat
+2024-11-01 13:08:52,980 - WARNING -  * Debugger is active!
+2024-11-01 13:08:52,983 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 13:08:59,110 - INFO - 127.0.0.1 - - [01/Nov/2024 13:08:59] "GET / HTTP/1.1" 200 -
+2024-11-01 13:08:59,208 - INFO - 127.0.0.1 - - [01/Nov/2024 13:08:59] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:08:59,385 - INFO - 127.0.0.1 - - [01/Nov/2024 13:08:59] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 13:09:01,137 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 13:09:01,290 - INFO - Fetching fixtures data...
+2024-11-01 13:09:01,353 - INFO - Fetching data for team ID: 6044732
+2024-11-01 13:09:01,412 - INFO - Updating predictions for all players...
+2024-11-01 13:09:25,697 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:25] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 13:09:33,527 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:33] "GET /player/117 HTTP/1.1" 200 -
+2024-11-01 13:09:37,040 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:37] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:09:37,312 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:37] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:09:37,797 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:37] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:09:39,796 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:39] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:09:40,304 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:40] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:09:40,550 - INFO - 127.0.0.1 - - [01/Nov/2024 13:09:40] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:10:13,783 - INFO - 127.0.0.1 - - [01/Nov/2024 13:10:13] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:11:55,357 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 13:11:55,358 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 13:11:55,362 - INFO -  * Restarting with stat
+2024-11-01 13:11:56,923 - WARNING -  * Debugger is active!
+2024-11-01 13:11:56,927 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 13:11:59,942 - INFO - 127.0.0.1 - - [01/Nov/2024 13:11:59] "GET / HTTP/1.1" 200 -
+2024-11-01 13:12:00,093 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:00] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:12:00,219 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:00] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 13:12:02,512 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 13:12:02,593 - INFO - Fetching fixtures data...
+2024-11-01 13:12:02,630 - INFO - Fetching data for team ID: 6044732
+2024-11-01 13:12:02,695 - INFO - Updating predictions for all players...
+2024-11-01 13:12:31,150 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:31] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 13:12:34,271 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:34] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:35,237 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:35] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:35,907 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:35] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:37,492 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:37] "GET /player/252 HTTP/1.1" 200 -
+2024-11-01 13:12:41,892 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:41] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:42,886 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:42] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:43,438 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:43] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:44,057 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:44] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:44,326 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:44] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:45,612 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:45] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:46,260 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:46] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:46,528 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:46] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:46,805 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:46] "[33mGET /player/undefined HTTP/1.1[0m" 404 -
+2024-11-01 13:12:56,810 - INFO - 127.0.0.1 - - [01/Nov/2024 13:12:56] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:14:51,728 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 13:14:51,729 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 13:14:51,732 - INFO -  * Restarting with stat
+2024-11-01 13:14:53,561 - WARNING -  * Debugger is active!
+2024-11-01 13:14:53,567 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 13:14:54,397 - INFO - 127.0.0.1 - - [01/Nov/2024 13:14:54] "GET / HTTP/1.1" 200 -
+2024-11-01 13:14:54,547 - INFO - 127.0.0.1 - - [01/Nov/2024 13:14:54] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:14:54,659 - INFO - 127.0.0.1 - - [01/Nov/2024 13:14:54] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 13:14:57,310 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 13:14:57,401 - INFO - Fetching fixtures data...
+2024-11-01 13:14:57,452 - INFO - Fetching data for team ID: 6044732
+2024-11-01 13:14:57,514 - INFO - Updating predictions for all players...
+2024-11-01 13:15:26,727 - INFO - 127.0.0.1 - - [01/Nov/2024 13:15:26] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 13:15:36,752 - INFO - 127.0.0.1 - - [01/Nov/2024 13:15:36] "GET /player/117 HTTP/1.1" 200 -
+2024-11-01 13:15:48,722 - INFO - 127.0.0.1 - - [01/Nov/2024 13:15:48] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:22:47,219 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\src\\analyze_transfers.py', reloading
+2024-11-01 13:22:47,359 - INFO -  * Restarting with stat
+2024-11-01 13:22:48,808 - WARNING -  * Debugger is active!
+2024-11-01 13:22:48,813 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 13:22:53,509 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 13:22:53,510 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 13:22:53,512 - INFO -  * Restarting with stat
+2024-11-01 13:22:55,378 - WARNING -  * Debugger is active!
+2024-11-01 13:22:55,382 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 13:22:56,090 - INFO - 127.0.0.1 - - [01/Nov/2024 13:22:56] "GET / HTTP/1.1" 200 -
+2024-11-01 13:22:56,218 - INFO - 127.0.0.1 - - [01/Nov/2024 13:22:56] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 13:22:56,330 - INFO - 127.0.0.1 - - [01/Nov/2024 13:22:56] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 13:22:58,687 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 13:22:58,788 - INFO - Fetching fixtures data...
+2024-11-01 13:22:58,838 - INFO - Fetching data for team ID: 6044732
+2024-11-01 13:22:58,897 - INFO - Updating predictions for all players...
+2024-11-01 13:23:25,794 - INFO - 127.0.0.1 - - [01/Nov/2024 13:23:25] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 13:23:43,088 - INFO - 127.0.0.1 - - [01/Nov/2024 13:23:43] "GET /player/99 HTTP/1.1" 200 -
+2024-11-01 13:23:45,072 - INFO - 127.0.0.1 - - [01/Nov/2024 13:23:45] "GET /player/594 HTTP/1.1" 200 -
+2024-11-01 13:23:49,284 - INFO - 127.0.0.1 - - [01/Nov/2024 13:23:49] "GET /player/185 HTTP/1.1" 200 -
+2024-11-01 13:23:52,751 - INFO - 127.0.0.1 - - [01/Nov/2024 13:23:52] "GET /player/17 HTTP/1.1" 200 -
+2024-11-01 14:13:45,156 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 14:13:45,157 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 14:13:45,159 - INFO -  * Restarting with stat
+2024-11-01 14:13:46,624 - WARNING -  * Debugger is active!
+2024-11-01 14:13:46,627 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:13:46,671 - INFO - 127.0.0.1 - - [01/Nov/2024 14:13:46] "GET / HTTP/1.1" 200 -
+2024-11-01 14:13:46,781 - INFO - 127.0.0.1 - - [01/Nov/2024 14:13:46] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:13:46,926 - INFO - 127.0.0.1 - - [01/Nov/2024 14:13:46] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:13:49,880 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:13:49,956 - INFO - Fetching fixtures data...
+2024-11-01 14:13:49,988 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:13:50,041 - INFO - Updating predictions for all players...
+2024-11-01 14:14:14,867 - INFO - 127.0.0.1 - - [01/Nov/2024 14:14:14] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:15:06,412 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\src\\analyze_transfers.py', reloading
+2024-11-01 14:15:06,484 - INFO -  * Restarting with stat
+2024-11-01 14:15:07,727 - WARNING -  * Debugger is active!
+2024-11-01 14:15:07,731 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:15:36,922 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 14:15:36,923 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 14:15:36,925 - INFO -  * Restarting with stat
+2024-11-01 14:15:38,375 - WARNING -  * Debugger is active!
+2024-11-01 14:15:38,378 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:15:39,979 - INFO - 127.0.0.1 - - [01/Nov/2024 14:15:39] "GET / HTTP/1.1" 200 -
+2024-11-01 14:15:40,070 - INFO - 127.0.0.1 - - [01/Nov/2024 14:15:40] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:15:40,216 - INFO - 127.0.0.1 - - [01/Nov/2024 14:15:40] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:15:42,359 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:15:42,462 - INFO - Fetching fixtures data...
+2024-11-01 14:15:42,523 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:15:42,580 - INFO - Updating predictions for all players...
+2024-11-01 14:16:07,309 - INFO - 127.0.0.1 - - [01/Nov/2024 14:16:07] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:16:12,914 - INFO - 127.0.0.1 - - [01/Nov/2024 14:16:12] "GET /player/99 HTTP/1.1" 200 -
+2024-11-01 14:16:15,901 - INFO - 127.0.0.1 - - [01/Nov/2024 14:16:15] "GET /player/594 HTTP/1.1" 200 -
+2024-11-01 14:22:28,641 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 14:22:28,642 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 14:22:28,644 - INFO -  * Restarting with stat
+2024-11-01 14:22:29,846 - WARNING -  * Debugger is active!
+2024-11-01 14:22:29,850 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:22:37,060 - INFO - 127.0.0.1 - - [01/Nov/2024 14:22:37] "GET / HTTP/1.1" 200 -
+2024-11-01 14:22:37,232 - INFO - 127.0.0.1 - - [01/Nov/2024 14:22:37] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:22:37,358 - INFO - 127.0.0.1 - - [01/Nov/2024 14:22:37] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 14:22:40,359 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:22:40,425 - INFO - Fetching fixtures data...
+2024-11-01 14:22:40,456 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:22:40,510 - INFO - Updating predictions for all players...
+2024-11-01 14:23:05,170 - INFO - 127.0.0.1 - - [01/Nov/2024 14:23:05] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:23:07,435 - INFO - 127.0.0.1 - - [01/Nov/2024 14:23:07] "GET /player/99 HTTP/1.1" 200 -
+2024-11-01 14:23:28,105 - INFO - 127.0.0.1 - - [01/Nov/2024 14:23:28] "GET /player/355 HTTP/1.1" 200 -
+2024-11-01 14:23:32,906 - INFO - 127.0.0.1 - - [01/Nov/2024 14:23:32] "GET /player/185 HTTP/1.1" 200 -
+2024-11-01 14:23:35,435 - INFO - 127.0.0.1 - - [01/Nov/2024 14:23:35] "GET /player/521 HTTP/1.1" 200 -
+2024-11-01 14:23:37,661 - INFO - 127.0.0.1 - - [01/Nov/2024 14:23:37] "GET /player/568 HTTP/1.1" 200 -
+2024-11-01 14:25:36,492 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 14:25:36,494 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 14:25:36,496 - INFO -  * Restarting with stat
+2024-11-01 14:25:37,734 - WARNING -  * Debugger is active!
+2024-11-01 14:25:37,739 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:25:39,808 - INFO - 127.0.0.1 - - [01/Nov/2024 14:25:39] "GET / HTTP/1.1" 200 -
+2024-11-01 14:25:39,914 - INFO - 127.0.0.1 - - [01/Nov/2024 14:25:39] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:25:40,075 - INFO - 127.0.0.1 - - [01/Nov/2024 14:25:40] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 14:25:41,925 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:25:42,017 - INFO - Fetching fixtures data...
+2024-11-01 14:25:42,056 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:25:42,116 - INFO - Updating predictions for all players...
+2024-11-01 14:26:08,819 - INFO - 127.0.0.1 - - [01/Nov/2024 14:26:08] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:26:14,252 - INFO - 127.0.0.1 - - [01/Nov/2024 14:26:14] "GET /player/594 HTTP/1.1" 200 -
+2024-11-01 14:26:16,680 - INFO - 127.0.0.1 - - [01/Nov/2024 14:26:16] "GET /player/533 HTTP/1.1" 200 -
+2024-11-01 14:27:29,300 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 14:27:29,302 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 14:27:29,304 - INFO -  * Restarting with stat
+2024-11-01 14:27:30,495 - WARNING -  * Debugger is active!
+2024-11-01 14:27:30,498 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:27:32,083 - INFO - 127.0.0.1 - - [01/Nov/2024 14:27:32] "GET /players HTTP/1.1" 200 -
+2024-11-01 14:27:32,254 - INFO - 127.0.0.1 - - [01/Nov/2024 14:27:32] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:27:32,328 - INFO - 127.0.0.1 - - [01/Nov/2024 14:27:32] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:27:35,015 - INFO - 127.0.0.1 - - [01/Nov/2024 14:27:35] "GET /players HTTP/1.1" 200 -
+2024-11-01 14:27:35,100 - INFO - 127.0.0.1 - - [01/Nov/2024 14:27:35] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:27:35,264 - INFO - 127.0.0.1 - - [01/Nov/2024 14:27:35] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:27:36,993 - INFO - 127.0.0.1 - - [01/Nov/2024 14:27:36] "GET /api/players?_=1730471255568 HTTP/1.1" 200 -
+2024-11-01 14:28:44,820 - INFO - 127.0.0.1 - - [01/Nov/2024 14:28:44] "GET / HTTP/1.1" 200 -
+2024-11-01 14:28:44,939 - INFO - 127.0.0.1 - - [01/Nov/2024 14:28:44] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:28:45,121 - INFO - 127.0.0.1 - - [01/Nov/2024 14:28:45] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 14:28:46,245 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:28:46,411 - INFO - Fetching fixtures data...
+2024-11-01 14:28:46,479 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:28:46,551 - INFO - Updating predictions for all players...
+2024-11-01 14:29:14,741 - INFO - 127.0.0.1 - - [01/Nov/2024 14:29:14] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:30:00,542 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 14:30:00,544 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 14:30:00,546 - INFO -  * Restarting with stat
+2024-11-01 14:30:01,953 - WARNING -  * Debugger is active!
+2024-11-01 14:30:01,957 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:30:04,936 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:04] "GET / HTTP/1.1" 200 -
+2024-11-01 14:30:05,029 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:05] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:30:05,245 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:05] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 14:30:08,719 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:30:08,827 - INFO - Fetching fixtures data...
+2024-11-01 14:30:08,867 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:30:08,942 - INFO - Updating predictions for all players...
+2024-11-01 14:30:35,804 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:35] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:30:42,251 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:42] "GET /player/355 HTTP/1.1" 200 -
+2024-11-01 14:30:45,629 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:45] "GET /players HTTP/1.1" 200 -
+2024-11-01 14:30:45,736 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:45] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:30:45,878 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:45] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:30:46,880 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:46] "GET /api/players?_=1730471445980 HTTP/1.1" 200 -
+2024-11-01 14:30:50,943 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:50] "GET / HTTP/1.1" 200 -
+2024-11-01 14:30:51,039 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:51] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:30:51,214 - INFO - 127.0.0.1 - - [01/Nov/2024 14:30:51] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:30:53,190 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:30:53,314 - INFO - Fetching fixtures data...
+2024-11-01 14:30:53,365 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:30:53,437 - INFO - Updating predictions for all players...
+2024-11-01 14:31:20,358 - INFO - 127.0.0.1 - - [01/Nov/2024 14:31:20] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:31:34,061 - INFO - 127.0.0.1 - - [01/Nov/2024 14:31:34] "GET /player/594 HTTP/1.1" 200 -
+2024-11-01 14:32:54,578 - INFO - 127.0.0.1 - - [01/Nov/2024 14:32:54] "GET /players HTTP/1.1" 200 -
+2024-11-01 14:32:54,681 - INFO - 127.0.0.1 - - [01/Nov/2024 14:32:54] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:32:54,862 - INFO - 127.0.0.1 - - [01/Nov/2024 14:32:54] "GET /js/main.js HTTP/1.1" 200 -
+2024-11-01 14:32:55,795 - INFO - 127.0.0.1 - - [01/Nov/2024 14:32:55] "GET /api/players?_=1730471574789 HTTP/1.1" 200 -
+2024-11-01 14:33:57,164 - INFO - 127.0.0.1 - - [01/Nov/2024 14:33:57] "GET /player/238 HTTP/1.1" 200 -
+2024-11-01 14:37:28,373 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 14:37:28,374 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 14:37:28,378 - INFO -  * Restarting with stat
+2024-11-01 14:37:30,000 - WARNING -  * Debugger is active!
+2024-11-01 14:37:30,003 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 14:37:32,075 - INFO - 127.0.0.1 - - [01/Nov/2024 14:37:32] "GET /players HTTP/1.1" 200 -
+2024-11-01 14:37:32,222 - INFO - 127.0.0.1 - - [01/Nov/2024 14:37:32] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:37:32,328 - INFO - 127.0.0.1 - - [01/Nov/2024 14:37:32] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:37:33,994 - INFO - 127.0.0.1 - - [01/Nov/2024 14:37:33] "GET /api/players?_=1730471852708 HTTP/1.1" 200 -
+2024-11-01 14:37:36,094 - INFO - 127.0.0.1 - - [01/Nov/2024 14:37:36] "GET / HTTP/1.1" 200 -
+2024-11-01 14:37:36,409 - INFO - 127.0.0.1 - - [01/Nov/2024 14:37:36] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 14:37:36,440 - INFO - 127.0.0.1 - - [01/Nov/2024 14:37:36] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 14:37:38,025 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 14:37:38,081 - INFO - Fetching fixtures data...
+2024-11-01 14:37:38,115 - INFO - Fetching data for team ID: 6044732
+2024-11-01 14:37:38,169 - INFO - Updating predictions for all players...
+2024-11-01 14:38:03,051 - INFO - 127.0.0.1 - - [01/Nov/2024 14:38:03] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 14:43:12,851 - INFO - 127.0.0.1 - - [01/Nov/2024 14:43:12] "GET /player/568 HTTP/1.1" 200 -
+2024-11-01 14:43:16,236 - INFO - 127.0.0.1 - - [01/Nov/2024 14:43:16] "GET /player/355 HTTP/1.1" 200 -
+2024-11-01 14:43:19,927 - INFO - 127.0.0.1 - - [01/Nov/2024 14:43:19] "GET /player/568 HTTP/1.1" 200 -
+2024-11-01 15:05:33,628 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:05:33,629 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:05:33,632 - INFO -  * Restarting with stat
+2024-11-01 15:05:34,575 - WARNING -  * Debugger is active!
+2024-11-01 15:05:34,578 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:05:37,161 - INFO - 127.0.0.1 - - [01/Nov/2024 15:05:37] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:05:37,252 - INFO - 127.0.0.1 - - [01/Nov/2024 15:05:37] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:05:37,411 - INFO - 127.0.0.1 - - [01/Nov/2024 15:05:37] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:05:38,564 - INFO - 127.0.0.1 - - [01/Nov/2024 15:05:38] "GET /api/players?_=1730473537522 HTTP/1.1" 200 -
+2024-11-01 15:09:58,866 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\src\\analysis\\predictions.py', reloading
+2024-11-01 15:09:58,965 - INFO -  * Restarting with stat
+2024-11-01 15:10:00,018 - WARNING -  * Debugger is active!
+2024-11-01 15:10:00,023 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:12:40,640 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\src\\analysis\\predictions.py', reloading
+2024-11-01 15:12:40,716 - INFO -  * Restarting with stat
+2024-11-01 15:12:42,149 - WARNING -  * Debugger is active!
+2024-11-01 15:12:42,152 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:12:43,205 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\src\\analysis\\predictions.py', reloading
+2024-11-01 15:12:43,272 - INFO -  * Restarting with stat
+2024-11-01 15:12:48,165 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:12:48,165 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:12:48,168 - INFO -  * Restarting with stat
+2024-11-01 15:12:49,153 - WARNING -  * Debugger is active!
+2024-11-01 15:12:49,155 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:12:59,454 - INFO - 127.0.0.1 - - [01/Nov/2024 15:12:59] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:12:59,522 - INFO - 127.0.0.1 - - [01/Nov/2024 15:12:59] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:12:59,713 - INFO - 127.0.0.1 - - [01/Nov/2024 15:12:59] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:13:00,357 - INFO - 127.0.0.1 - - [01/Nov/2024 15:13:00] "GET /api/players?_=1730473979653 HTTP/1.1" 200 -
+2024-11-01 15:13:42,646 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:13:42,647 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:13:42,649 - INFO -  * Restarting with stat
+2024-11-01 15:13:43,618 - WARNING -  * Debugger is active!
+2024-11-01 15:13:43,620 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:14:00,374 - INFO - 127.0.0.1 - - [01/Nov/2024 15:14:00] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:14:00,505 - INFO - 127.0.0.1 - - [01/Nov/2024 15:14:00] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:14:00,613 - INFO - 127.0.0.1 - - [01/Nov/2024 15:14:00] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:14:01,237 - INFO - 127.0.0.1 - - [01/Nov/2024 15:14:01] "GET /api/players?_=1730474040585 HTTP/1.1" 200 -
+2024-11-01 15:16:57,960 - INFO - 127.0.0.1 - - [01/Nov/2024 15:16:57] "GET / HTTP/1.1" 200 -
+2024-11-01 15:16:58,029 - INFO - 127.0.0.1 - - [01/Nov/2024 15:16:58] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:16:58,201 - INFO - 127.0.0.1 - - [01/Nov/2024 15:16:58] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:16:59,262 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 15:16:59,367 - INFO - Fetching fixtures data...
+2024-11-01 15:16:59,415 - INFO - Fetching data for team ID: 6044732
+2024-11-01 15:16:59,469 - INFO - Updating predictions for all players...
+2024-11-01 15:17:20,827 - INFO - 127.0.0.1 - - [01/Nov/2024 15:17:20] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 15:41:23,037 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:41:23,038 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:41:23,042 - INFO -  * Restarting with stat
+2024-11-01 15:41:24,754 - WARNING -  * Debugger is active!
+2024-11-01 15:41:24,758 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:41:28,206 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:28] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:41:28,336 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:28] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:41:28,455 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:28] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:41:33,219 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:33] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:41:33,575 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:33] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:41:33,575 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:33] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:41:52,333 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:52] "GET /api/players?_=1730475688590 HTTP/1.1" 200 -
+2024-11-01 15:41:57,640 - INFO - 127.0.0.1 - - [01/Nov/2024 15:41:57] "GET /api/players?_=1730475693386 HTTP/1.1" 200 -
+2024-11-01 15:43:01,096 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\web\\app.py', reloading
+2024-11-01 15:43:01,207 - INFO -  * Restarting with stat
+2024-11-01 15:43:02,294 - WARNING -  * Debugger is active!
+2024-11-01 15:43:02,297 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:43:29,064 - INFO - 127.0.0.1 - - [01/Nov/2024 15:43:29] "GET /player/17 HTTP/1.1" 200 -
+2024-11-01 15:43:39,789 - INFO - 127.0.0.1 - - [01/Nov/2024 15:43:39] "GET /player/17 HTTP/1.1" 200 -
+2024-11-01 15:43:55,811 - INFO - 127.0.0.1 - - [01/Nov/2024 15:43:55] "GET /player/17 HTTP/1.1" 200 -
+2024-11-01 15:49:21,118 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\web\\app.py', reloading
+2024-11-01 15:49:21,247 - INFO -  * Restarting with stat
+2024-11-01 15:49:22,526 - WARNING -  * Debugger is active!
+2024-11-01 15:49:22,530 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:49:26,233 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:49:26,234 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:49:26,236 - INFO -  * Restarting with stat
+2024-11-01 15:49:27,219 - WARNING -  * Debugger is active!
+2024-11-01 15:49:27,222 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:49:31,340 - INFO - 127.0.0.1 - - [01/Nov/2024 15:49:31] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:49:31,448 - INFO - 127.0.0.1 - - [01/Nov/2024 15:49:31] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:49:31,586 - INFO - 127.0.0.1 - - [01/Nov/2024 15:49:31] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:49:46,684 - INFO - 127.0.0.1 - - [01/Nov/2024 15:49:46] "GET / HTTP/1.1" 200 -
+2024-11-01 15:49:47,865 - INFO - 127.0.0.1 - - [01/Nov/2024 15:49:47] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:49:47,971 - INFO - 127.0.0.1 - - [01/Nov/2024 15:49:47] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:49:49,432 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 15:49:49,544 - INFO - Fetching fixtures data...
+2024-11-01 15:49:49,599 - INFO - Fetching data for team ID: 6044732
+2024-11-01 15:49:49,666 - INFO - Updating predictions for all players...
+2024-11-01 15:50:00,478 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:00] "GET /api/players?_=1730476171669 HTTP/1.1" 200 -
+2024-11-01 15:50:11,330 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:11] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 15:50:19,647 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:19] "GET /player/328 HTTP/1.1" 200 -
+2024-11-01 15:50:23,339 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:23] "GET /player/521 HTTP/1.1" 200 -
+2024-11-01 15:50:26,892 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:26] "GET /player/185 HTTP/1.1" 200 -
+2024-11-01 15:50:32,445 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:32] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:50:32,755 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:32] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:50:32,794 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:32] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:50:57,817 - INFO - 127.0.0.1 - - [01/Nov/2024 15:50:57] "GET /api/players?_=1730476232808 HTTP/1.1" 200 -
+2024-11-01 15:54:15,091 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\web\\app.py', reloading
+2024-11-01 15:54:15,205 - INFO -  * Restarting with stat
+2024-11-01 15:54:16,383 - WARNING -  * Debugger is active!
+2024-11-01 15:54:16,385 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:54:23,776 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:54:23,777 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:54:23,779 - INFO -  * Restarting with stat
+2024-11-01 15:54:24,783 - WARNING -  * Debugger is active!
+2024-11-01 15:54:24,787 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:54:30,149 - INFO - 127.0.0.1 - - [01/Nov/2024 15:54:30] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:54:30,266 - INFO - 127.0.0.1 - - [01/Nov/2024 15:54:30] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:54:30,400 - INFO - 127.0.0.1 - - [01/Nov/2024 15:54:30] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:54:30,988 - ERROR - Error fetching players: cannot access local variable 'games_played' where it is not associated with a value
+2024-11-01 15:54:30,991 - INFO - 127.0.0.1 - - [01/Nov/2024 15:54:30] "[35m[1mGET /api/players?_=1730476470526 HTTP/1.1[0m" 500 -
+2024-11-01 15:55:10,469 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\web\\app.py', reloading
+2024-11-01 15:55:10,564 - INFO -  * Restarting with stat
+2024-11-01 15:55:11,607 - WARNING -  * Debugger is active!
+2024-11-01 15:55:11,609 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:55:21,990 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\web\\app.py', reloading
+2024-11-01 15:55:22,057 - INFO -  * Restarting with stat
+2024-11-01 15:55:23,051 - WARNING -  * Debugger is active!
+2024-11-01 15:55:23,054 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:55:29,332 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:55:29,333 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:55:29,336 - INFO -  * Restarting with stat
+2024-11-01 15:55:30,456 - WARNING -  * Debugger is active!
+2024-11-01 15:55:30,459 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:55:34,437 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:34] "GET / HTTP/1.1" 200 -
+2024-11-01 15:55:34,565 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:34] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:55:34,682 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:34] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:55:35,927 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:35] "GET / HTTP/1.1" 200 -
+2024-11-01 15:55:36,238 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:36] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:55:36,331 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:36] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:55:36,747 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:36] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:55:37,050 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:37] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:55:37,051 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:37] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:55:37,633 - ERROR - Error fetching players: cannot access local variable 'games_played' where it is not associated with a value
+2024-11-01 15:55:37,635 - INFO - 127.0.0.1 - - [01/Nov/2024 15:55:37] "[35m[1mGET /api/players?_=1730476536864 HTTP/1.1[0m" 500 -
+2024-11-01 15:56:20,186 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\web\\app.py', reloading
+2024-11-01 15:56:20,272 - INFO -  * Restarting with stat
+2024-11-01 15:56:21,511 - WARNING -  * Debugger is active!
+2024-11-01 15:56:21,513 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:56:24,105 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 15:56:24,106 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 15:56:24,108 - INFO -  * Restarting with stat
+2024-11-01 15:56:25,028 - WARNING -  * Debugger is active!
+2024-11-01 15:56:25,032 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 15:56:29,069 - INFO - 127.0.0.1 - - [01/Nov/2024 15:56:29] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:56:29,157 - INFO - 127.0.0.1 - - [01/Nov/2024 15:56:29] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:56:29,305 - INFO - 127.0.0.1 - - [01/Nov/2024 15:56:29] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:56:53,408 - INFO - 127.0.0.1 - - [01/Nov/2024 15:56:53] "GET /api/players?_=1730476589229 HTTP/1.1" 200 -
+2024-11-01 15:56:57,293 - INFO - 127.0.0.1 - - [01/Nov/2024 15:56:57] "GET /methodology HTTP/1.1" 200 -
+2024-11-01 15:56:57,611 - INFO - 127.0.0.1 - - [01/Nov/2024 15:56:57] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:56:57,640 - INFO - 127.0.0.1 - - [01/Nov/2024 15:56:57] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:57:01,110 - INFO - 127.0.0.1 - - [01/Nov/2024 15:57:01] "GET / HTTP/1.1" 200 -
+2024-11-01 15:57:01,183 - INFO - 127.0.0.1 - - [01/Nov/2024 15:57:01] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:57:01,356 - INFO - 127.0.0.1 - - [01/Nov/2024 15:57:01] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:57:02,427 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 15:57:02,500 - INFO - Fetching fixtures data...
+2024-11-01 15:57:02,557 - INFO - Fetching data for team ID: 6044732
+2024-11-01 15:57:02,614 - INFO - Updating predictions for all players...
+2024-11-01 15:57:25,743 - INFO - 127.0.0.1 - - [01/Nov/2024 15:57:25] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 15:57:47,235 - INFO - 127.0.0.1 - - [01/Nov/2024 15:57:47] "GET /player/328 HTTP/1.1" 200 -
+2024-11-01 15:57:51,494 - INFO - 127.0.0.1 - - [01/Nov/2024 15:57:51] "GET /player/521 HTTP/1.1" 200 -
+2024-11-01 15:57:58,529 - INFO - 127.0.0.1 - - [01/Nov/2024 15:57:58] "GET /player/185 HTTP/1.1" 200 -
+2024-11-01 15:58:21,438 - INFO - 127.0.0.1 - - [01/Nov/2024 15:58:21] "GET /players HTTP/1.1" 200 -
+2024-11-01 15:58:21,755 - INFO - 127.0.0.1 - - [01/Nov/2024 15:58:21] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 15:58:21,824 - INFO - 127.0.0.1 - - [01/Nov/2024 15:58:21] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 15:58:48,965 - INFO - 127.0.0.1 - - [01/Nov/2024 15:58:48] "GET /api/players?_=1730476701911 HTTP/1.1" 200 -
+2024-11-01 16:00:36,788 - INFO -  * Detected change in 'C:\\Users\\Laptop 4\\Documents\\fpl_analyzer\\web\\app.py', reloading
+2024-11-01 16:00:36,871 - INFO -  * Restarting with stat
+2024-11-01 16:00:38,318 - WARNING -  * Debugger is active!
+2024-11-01 16:00:38,323 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 16:00:44,693 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 16:00:44,693 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 16:00:44,696 - INFO -  * Restarting with stat
+2024-11-01 16:00:46,361 - WARNING -  * Debugger is active!
+2024-11-01 16:00:46,364 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 16:00:59,526 - INFO - 127.0.0.1 - - [01/Nov/2024 16:00:59] "GET /players HTTP/1.1" 200 -
+2024-11-01 16:00:59,695 - INFO - 127.0.0.1 - - [01/Nov/2024 16:00:59] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 16:00:59,760 - INFO - 127.0.0.1 - - [01/Nov/2024 16:00:59] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 16:01:26,027 - INFO - 127.0.0.1 - - [01/Nov/2024 16:01:26] "GET /api/players?_=1730476860056 HTTP/1.1" 200 -
+2024-11-01 16:01:42,132 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 16:01:42,134 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 16:01:42,138 - INFO -  * Restarting with stat
+2024-11-01 16:01:43,922 - WARNING -  * Debugger is active!
+2024-11-01 16:01:43,925 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 16:01:45,746 - INFO - 127.0.0.1 - - [01/Nov/2024 16:01:45] "GET /players HTTP/1.1" 200 -
+2024-11-01 16:01:45,872 - INFO - 127.0.0.1 - - [01/Nov/2024 16:01:45] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 16:01:45,984 - INFO - 127.0.0.1 - - [01/Nov/2024 16:01:45] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 16:02:12,935 - INFO - 127.0.0.1 - - [01/Nov/2024 16:02:12] "GET /api/players?_=1730476906250 HTTP/1.1" 200 -
+2024-11-01 16:02:37,218 - INFO - 127.0.0.1 - - [01/Nov/2024 16:02:37] "GET /players HTTP/1.1" 200 -
+2024-11-01 16:02:37,521 - INFO - 127.0.0.1 - - [01/Nov/2024 16:02:37] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 16:02:37,553 - INFO - 127.0.0.1 - - [01/Nov/2024 16:02:37] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 16:03:04,303 - INFO - 127.0.0.1 - - [01/Nov/2024 16:03:04] "GET /api/players?_=1730476957415 HTTP/1.1" 200 -
+2024-11-01 16:03:20,768 - INFO - 127.0.0.1 - - [01/Nov/2024 16:03:20] "GET /player/15 HTTP/1.1" 200 -
+2024-11-01 16:03:44,487 - INFO - 127.0.0.1 - - [01/Nov/2024 16:03:44] "GET / HTTP/1.1" 200 -
+2024-11-01 16:03:44,569 - INFO - 127.0.0.1 - - [01/Nov/2024 16:03:44] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 16:03:44,731 - INFO - 127.0.0.1 - - [01/Nov/2024 16:03:44] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 16:03:47,322 - INFO - Fetching FPL data for team 6044732...
+2024-11-01 16:03:47,448 - INFO - Fetching fixtures data...
+2024-11-01 16:03:47,500 - INFO - Fetching data for team ID: 6044732
+2024-11-01 16:03:47,574 - INFO - Updating predictions for all players...
+2024-11-01 16:04:15,444 - INFO - 127.0.0.1 - - [01/Nov/2024 16:04:15] "POST /analyze HTTP/1.1" 200 -
+2024-11-01 16:04:19,913 - INFO - 127.0.0.1 - - [01/Nov/2024 16:04:19] "GET /player/36 HTTP/1.1" 200 -
+2024-11-01 16:06:27,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-01 16:06:27,646 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-01 16:06:27,650 - INFO -  * Restarting with stat
+2024-11-01 16:06:29,192 - WARNING -  * Debugger is active!
+2024-11-01 16:06:29,198 - INFO -  * Debugger PIN: 804-260-490
+2024-11-01 16:06:30,239 - INFO - 127.0.0.1 - - [01/Nov/2024 16:06:30] "GET /players HTTP/1.1" 200 -
+2024-11-01 16:06:30,378 - INFO - 127.0.0.1 - - [01/Nov/2024 16:06:30] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+2024-11-01 16:06:30,471 - INFO - 127.0.0.1 - - [01/Nov/2024 16:06:30] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+2024-11-01 16:06:58,818 - INFO - 127.0.0.1 - - [01/Nov/2024 16:06:58] "GET /api/players?_=1730477190438 HTTP/1.1" 200 -

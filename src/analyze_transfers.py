@@ -151,6 +151,7 @@ def analyze_transfers(team_id: int):
                 if points_improvement > 0:
                     transfer_suggestions.append({
                         'out': {
+                            'player_id': current_player['id'],
                             'name': current_player['name'],
                             'team': current_player['team'],
                             'form': current_player['form'],
@@ -158,6 +159,7 @@ def analyze_transfers(team_id: int):
                             'predicted_points': current_player['prediction'].predicted_points
                         },
                         'in': {
+                            'player_id': replacement_data['id'],
                             'name': replacement_data['web_name'],
                             'team': next(t['name'] for t in fpl_data['teams'] if t['id'] == replacement_data['team']),
                             'form': float(replacement_data['form'] or 0),
@@ -184,6 +186,7 @@ def analyze_transfers(team_id: int):
             },
             'current_squad': [
                 {
+                    'player_id': player['id'],
                     'name': player['name'],
                     'team': player['team'],
                     'position': player['position'],

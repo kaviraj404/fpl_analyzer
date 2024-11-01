@@ -13,8 +13,8 @@ class PredictionEngine:
             'FWD': {'goal': 4, 'assist': 3}
         }
 
-    def calculate_form_metrics(self, player_history: List[Dict]) -> Dict:
-        """Calculate form metrics based on recent games"""
+    def calculate_form_metrics(self, player_history: List[Dict], player: Dict) -> Dict:
+        """Calculate form metrics considering both recent and season-long performance"""
         recent_games = player_history[-5:] if player_history else []
         
         if not recent_games:
@@ -24,26 +24,39 @@ class PredictionEngine:
                 'goals_scored': 0,
                 'assists': 0,
                 'clean_sheets': 0,
-                'form_stability': 0
+                'form_stability': 0,
+                'season_ppg': 0,
+                'total_games': 0
             }
 
+        # Season performance metrics
+        total_games = len(player_history)
+        season_points_per_game = sum(g['total_points'] for g in player_history) / total_games if total_games > 0 else 0
+        
+        # Recent form with weighted last 5 games
+        weights = [0.1, 0.15, 0.2, 0.25, 0.3]  # Most recent games count more
         points = [g['total_points'] for g in recent_games]
-        minutes = [g['minutes'] for g in recent_games]
+        weighted_recent_form = sum(p * w for p, w in zip(points, weights[-len(points):]))
+        
+        # Combine recent form with season performance
+        combined_form = (weighted_recent_form * 0.6) + (season_points_per_game * 0.4)
         
         return {
-            'avg_points': np.mean(points),
-            'minutes_played': np.mean(minutes),
+            'avg_points': combined_form,
+            'season_ppg': season_points_per_game,
+            'minutes_played': np.mean([g['minutes'] for g in recent_games]),
             'goals_scored': sum(g['goals_scored'] for g in recent_games),
             'assists': sum(g['assists'] for g in recent_games),
             'clean_sheets': sum(g['clean_sheets'] for g in recent_games),
-            'form_stability': 1 - (np.std(points) / max(np.mean(points), 1))
+            'form_stability': 1 - (np.std(points) / max(combined_form, 1)),
+            'total_games': total_games
         }
 
     def calculate_fixture_difficulty(self, fixture: Dict, is_home: bool) -> float:
-        """Calculate fixture difficulty rating"""
+        """Calculate fixture difficulty rating with reduced impact"""
         base_difficulty = fixture['team_h_difficulty'] if is_home else fixture['team_a_difficulty']
-        home_advantage = 0.8 if is_home else 1.0
-        return base_difficulty * home_advantage
+        home_advantage = 0.9 if is_home else 1.0  # Reduced home advantage impact
+        return (base_difficulty * home_advantage) * 0.8  # Reduced overall fixture impact
 
     def predict_defensive_points(self, 
                                player: Dict, 
@@ -53,22 +66,18 @@ class PredictionEngine:
         position = player['position']
         weights = self.position_weights[position]
         
-        # Calculate clean sheet probability
-        clean_sheet_prob = max(0, 1 - (fixture_difficulty / 5)) * form_metrics['form_stability']
+        # Clean sheet probability weighted by season performance
+        clean_sheet_base = max(0, 1 - (fixture_difficulty / 5))
+        season_factor = min(form_metrics['season_ppg'] / 4, 1)  # Normalized by typical clean sheet points
+        clean_sheet_prob = clean_sheet_base * form_metrics['form_stability'] * (0.7 + (0.3 * season_factor))
         
-        # Base points (appearance + likely clean sheet)
+        # Base points calculation
         base_points = 2 + (clean_sheet_prob * weights['clean_sheet'])
-        
-        # Additional attacking threat for defenders
-        if position == 'DEF':
-            goal_prob = form_metrics['goals_scored'] / 5 * (1 - fixture_difficulty/5)
-            assist_prob = form_metrics['assists'] / 5 * (1 - fixture_difficulty/5)
-            base_points += (goal_prob * weights['goal'] + assist_prob * weights['assist'])
         
         return base_points, {
             'clean_sheet_probability': clean_sheet_prob,
-            'expected_goals': goal_prob if position == 'DEF' else 0,
-            'expected_assists': assist_prob if position == 'DEF' else 0
+            'expected_goals': 0,
+            'expected_assists': 0
         }
 
     def predict_attacking_points(self, 
@@ -78,11 +87,16 @@ class PredictionEngine:
         """Predict points for midfielders and forwards"""
         weights = self.position_weights[player['position']]
         
+        # Adjust probabilities based on season performance
+        season_factor = min(form_metrics['season_ppg'] / 6, 1)  # Normalized by typical good performance
+        
         # Calculate goal probability
-        goal_prob = (form_metrics['goals_scored'] / 5) * (1 - fixture_difficulty/5)
+        goal_prob = ((form_metrics['goals_scored'] / 5) * 0.6 + 
+                    (form_metrics['season_ppg'] / 10) * 0.4) * (1 - fixture_difficulty/5)
         
         # Calculate assist probability
-        assist_prob = (form_metrics['assists'] / 5) * (1 - fixture_difficulty/5)
+        assist_prob = ((form_metrics['assists'] / 5) * 0.6 + 
+                      (form_metrics['season_ppg'] / 15) * 0.4) * (1 - fixture_difficulty/5)
         
         # Base points calculation
         base_points = 2  # Appearance points
@@ -90,7 +104,7 @@ class PredictionEngine:
         base_points += assist_prob * weights['assist']
         
         if player['position'] == 'MID':
-            clean_sheet_prob = max(0, 1 - (fixture_difficulty / 5)) * form_metrics['form_stability']
+            clean_sheet_prob = max(0, 1 - (fixture_difficulty / 5)) * form_metrics['form_stability'] * 0.5
             base_points += clean_sheet_prob * weights['clean_sheet']
         else:
             clean_sheet_prob = 0
@@ -107,10 +121,12 @@ class PredictionEngine:
         """Calculate confidence level of prediction"""
         minutes_factor = min(form_metrics['minutes_played'] / 90, 1)
         form_factor = form_metrics['form_stability']
+        season_factor = min(form_metrics['season_ppg'] / 6, 1)  # Added season performance factor
         fixture_factor = 1 - (fixture_difficulty / 5)
         
-        confidence = (minutes_factor * 0.4 + 
-                     form_factor * 0.4 + 
+        confidence = (minutes_factor * 0.3 + 
+                     form_factor * 0.3 + 
+                     season_factor * 0.2 +
                      fixture_factor * 0.2)
         
         return min(max(confidence, 0), 1)
@@ -121,11 +137,11 @@ class PredictionEngine:
                           fixture: Dict,
                           gameweek: int) -> PlayerPrediction:
         """Generate complete prediction for a player"""
-        form_metrics = self.calculate_form_metrics(player_history)
+        form_metrics = self.calculate_form_metrics(player_history, player)
         is_home = fixture['team_h'] == player['team']
         fixture_difficulty = self.calculate_fixture_difficulty(fixture, is_home)
         
-        # Calculate position-specific points
+        # Calculate base prediction
         if player['position'] in ['GKP', 'DEF']:
             base_points, probabilities = self.predict_defensive_points(
                 player, form_metrics, fixture_difficulty
@@ -135,11 +151,19 @@ class PredictionEngine:
                 player, form_metrics, fixture_difficulty
             )
         
-        # Calculate minutes probability
+        # Adjust prediction based on season performance
+        season_factor = form_metrics['season_ppg'] / max(base_points, 1)
+        adjusted_points = base_points * (0.7 + (0.3 * season_factor))
+        
+        # Minutes probability adjustment
         minutes_prob = form_metrics['minutes_played'] / 90
         
-        # Apply minutes probability to expected points
-        predicted_points = base_points * minutes_prob
+        # Final prediction combining all factors
+        predicted_points = adjusted_points * minutes_prob
+        
+        # Weight prediction more heavily towards season performance for consistent top performers
+        if form_metrics['total_games'] > 5 and form_metrics['season_ppg'] > 5:
+            predicted_points = (predicted_points * 0.7) + (form_metrics['season_ppg'] * 0.3)
         
         # Calculate confidence score
         confidence_score = self.calculate_confidence_score(
