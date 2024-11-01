@@ -118,82 +118,78 @@ document.addEventListener('DOMContentLoaded', function() {
 
             <!-- Transfer Suggestions -->
             <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h3 class="text-lg font-semibold mb-4 text-blue-800">
-                    <i class="fas fa-exchange-alt mr-2"></i>Transfer Suggestions
-                </h3>
-                <div class="space-y-6">
-                    ${data.transfer_suggestions.map((transfer, index) => `
-                        <div class="bg-gray-50 rounded-lg p-4">
-                            <div class="flex items-center gap-4">
-                                <!-- Player Out -->
-                                <div class="flex-1 bg-red-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition-all"
-                                    onclick="showPlayerDetails(${transfer.out?.id || 0})">
-                                    <p class="font-semibold text-red-600 mb-1">Transfer Out</p>
-                                    <div class="space-y-1">
-                                        <p class="font-medium">${transfer.out?.name || 'Unknown'}</p>
-                                        <p class="text-sm text-gray-600">Team: ${transfer.out?.team || 'N/A'}</p>
-                                        <p class="text-sm text-gray-600">Form: ${transfer.out?.form || '0.0'}</p>
-                                        <p class="text-sm text-gray-600">Price: £${(transfer.out?.price || 0).toFixed(1)}m</p>
-                                    </div>
-                                </div>
+                        <h3 class="text-lg font-semibold mb-4 text-blue-800">
+                            <i class="fas fa-exchange-alt mr-2"></i>Transfer Suggestions
+                        </h3>
+                        <div class="space-y-6">
+                            ${data.transfer_suggestions.map((transfer, index) => `
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="flex items-center gap-4">
+                                        <!-- Player Out -->
+                                        <div class="flex-1 bg-red-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition-all"
+                                            onclick="showPlayerDetails(${transfer.out.player_id})">
+                                            <p class="font-semibold text-red-600 mb-1">Transfer Out</p>
+                                            <div class="space-y-1">
+                                                <p class="font-medium">${transfer.out.name}</p>
+                                                <p class="text-sm text-gray-600">Form: ${Number(transfer.out.form).toFixed(1)}</p>
+                                                <p class="text-sm text-gray-600">Predicted Points: ${Math.round(transfer.out.predicted_points)}</p>
+                                            </div>
+                                        </div>
 
-                                <!-- Arrow and Stats -->
-                                <div class="flex flex-col items-center px-2">
-                                    <span class="text-2xl text-gray-400 mb-2">→</span>
-                                    <div class="text-center bg-white rounded-lg p-2 shadow-sm">
-                                        <p class="text-sm font-medium text-blue-600">+${(transfer.improvement || 0).toFixed(1)} pts</p>
-                                        <p class="text-xs text-gray-500">predicted gain</p>
-                                    </div>
-                                </div>
+                                        <!-- Arrow and Stats -->
+                                        <div class="flex flex-col items-center px-2">
+                                            <span class="text-2xl text-gray-400 mb-2">→</span>
+                                            <div class="text-center bg-white rounded-lg p-2 shadow-sm">
+                                                <p class="text-sm font-medium text-blue-600">+${Math.round(transfer.improvement)} pts</p>
+                                                <p class="text-xs text-gray-500">predicted gain</p>
+                                            </div>
+                                        </div>
 
-                                <!-- Player In -->
-                                <div class="flex-1 bg-green-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition-all"
-                                    onclick="showPlayerDetails(${transfer.in?.id || 0})">
-                                    <p class="font-semibold text-green-600 mb-1">Transfer In</p>
-                                    <div class="space-y-1">
-                                        <p class="font-medium">${transfer.in?.name || 'Unknown'}</p>
-                                        <p class="text-sm text-gray-600">Team: ${transfer.in?.team || 'N/A'}</p>
-                                        <p class="text-sm text-gray-600">Form: ${transfer.in?.form || '0.0'}</p>
-                                        <p class="text-sm text-gray-600">Price: £${(transfer.in?.price || 0).toFixed(1)}m</p>
-                                        ${(transfer.in?.selected_by || 0) < 10 ? 
-                                            `<p class="text-xs text-blue-600 mt-1">Differential (${transfer.in?.selected_by || 0}% owned)</p>` : ''}
+                                        <!-- Player In -->
+                                        <div class="flex-1 bg-green-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition-all"
+                                            onclick="showPlayerDetails(${transfer.in.player_id})">
+                                            <p class="font-semibold text-green-600 mb-1">Transfer In</p>
+                                            <div class="space-y-1">
+                                                <p class="font-medium">${transfer.in.name}</p>
+                                                <p class="text-sm text-gray-600">Form: ${Number(transfer.in.form).toFixed(1)}</p>
+                                                <p class="text-sm text-gray-600">Predicted Points: ${Math.round(transfer.in.predicted_points)}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Transfer Summary -->
+                                    <div class="mt-3 pt-3 border-t border-gray-200 text-sm text-gray-600 flex justify-between">
+                                        <span>Price Change: ${Number(transfer.price_change).toFixed(1)}m</span>
+                                        <span>Budget After: £${Number(transfer.remaining_budget).toFixed(1)}</span>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <!-- Transfer Summary -->
-                            <div class="mt-3 pt-3 border-t border-gray-200 text-sm text-gray-600 flex justify-between">
-                                <span>Price Change: ${(transfer.price_diff || 0) > 0 ? '+' : ''}£${(transfer.price_diff || 0).toFixed(1)}m</span>
-                                <span>Budget After: £${(transfer.remaining_budget || 0).toFixed(1)}m</span>
-                            </div>
+                            `).join('')}
                         </div>
-                    `).join('')}
-                </div>
-            </div>
+                    </div>
 
             <!-- Current Squad -->
             <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h3 class="text-lg font-semibold mb-4 text-blue-800">
-                    <i class="fas fa-users mr-2"></i>Current Squad
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    ${data.current_squad.map(player => `
-                        <div class="player-card p-4 bg-gray-50 rounded-lg hover:shadow-md transition-all cursor-pointer"
-                             onclick="showPlayerDetails(${player.id})">
-                            <div class="flex justify-between items-center">
-                                <div>
-                                    <p class="font-semibold">${player.name}</p>
-                                    <p class="text-sm text-gray-600">${player.team} - ${player.position}</p>
+                        <h3 class="text-lg font-semibold mb-4 text-blue-800">
+                            <i class="fas fa-users mr-2"></i>Current Squad
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            ${data.current_squad.map(player => `
+                                <div class="player-card p-4 bg-gray-50 rounded-lg hover:shadow-md transition-all cursor-pointer"
+                                    onclick="showPlayerDetails(${player.player_id})">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="font-semibold">${player.name}</p>
+                                            <p class="text-sm text-gray-600">${player.team} - ${player.position}</p>
+                                        </div>
+                                        <div class="text-right">
+                                            <p class="text-sm">£${player.price}m</p>
+                                            <p class="text-sm">Form: ${player.form}</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <p class="text-sm">£${player.price.toFixed(1)}m</p>
-                                    <p class="text-sm">Form: ${player.form}</p>
-                                </div>
-                            </div>
+                            `).join('')}
                         </div>
-                    `).join('')}
-                </div>
-            </div>
+                    </div>
 
             <!-- Info Section -->
             <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
@@ -220,8 +216,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 async function showPlayerDetails(playerId) {
+    console.log('ShowPlayerDetails called with ID:', playerId);
+    
+    if (!playerId) {
+        console.error('No player ID provided');
+        return;
+    }
+    
     try {
-        const response = await fetch(`/player/${playerId}`);
+        const response = await fetch(`/player/${playerId}`);  // Using the correct player ID
+        if (!response.ok) {
+            throw new Error(`Failed to fetch player details. Status: ${response.status}`);
+        }
         const player = await response.json();
         
         const modal = document.getElementById('playerModal');

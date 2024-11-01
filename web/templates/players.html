@@ -22,6 +22,7 @@
                         <th class="px-4 py-2">Name</th>
                         <th class="px-4 py-2">Team</th>
                         <th class="px-4 py-2">Position</th>
+                        <th class="px-4 py-2">Next Fixture</th>
                         <th class="px-4 py-2">Price</th>
                         <th class="px-4 py-2">Form</th>
                         <th class="px-4 py-2">Total Points</th>
@@ -55,6 +56,7 @@ $(document).ready(function() {
             },
             { data: 'team' },
             { data: 'position' },
+            { data: 'next_fixture' },
             { 
                 data: 'price',
                 render: price => `£${price.toFixed(1)}m`
@@ -69,7 +71,7 @@ $(document).ready(function() {
             { data: 'games_played' },
             { 
                 data: 'predicted_points',
-                render: pts => pts ? pts.toFixed(1) : '0.0'
+                render: pts => Math.round(pts)
             },
             { 
                 data: 'selected_by',
@@ -85,7 +87,7 @@ $(document).ready(function() {
                 }
             }
         ],
-        order: [[5, 'desc']],
+        order: [[6, 'desc']],
         pageLength: 25,
         responsive: true
     });
